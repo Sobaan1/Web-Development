@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: rosybrown;
+            /* border: 4px solid red; */
+            box-shadow: 10px 10px 5px 1px rgba(114, 9, 128, 0.8);
+            /* a stands for alpha which means darkness of colors */
+            /*shadow in right side and bottom third one is blur radius and fourth one is spread radius*/
+            /*we can even use negative numbers to give shadow in left and top direction*/
+        }
+
+        .card h2 {
+            text-shadow: 3px 2px 2px white;
+            /*x dirctn , -y dirctn , blur effect and if we put -3px and -2px it will get implemented in y derctn and -x direction */
+            font-size: 45px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2> card 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio architecto explicabo inventore deleniti
+                numquam adipisci voluptatum tenetur dolorem dolorum, eius provident dolore tempore animi sed, ratione
+                magni nihil quo nesciunt doloribus minus enim eligendi?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2> card 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio architecto explicabo inventore deleniti
+                numquam adipisci voluptatum tenetur dolorem dolorum, eius provident dolore tempore animi sed, ratione
+                magni nihil quo nesciunt doloribus minus enim eligendi?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2> card 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio architecto explicabo inventore deleniti
+                numquam adipisci voluptatum tenetur dolorem dolorum, eius provident dolore tempore animi sed, ratione
+                magni nihil quo nesciunt doloribus minus enim eligendi?</p>
+        </div>
+    </div>
+</body>
+
+</html>
